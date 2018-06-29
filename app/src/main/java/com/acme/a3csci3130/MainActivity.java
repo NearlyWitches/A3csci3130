@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
 
         //Set-up Firebase
         appData.firebaseDBInstance = FirebaseDatabase.getInstance();
-        appData.firebaseReference = appData.firebaseDBInstance.getReference("contacts");
+        appData.firebaseReference = appData.firebaseDBInstance.getReference("business");
 
         //Get the reference to the UI contents
         contactListView = (ListView) findViewById(R.id.listView);
@@ -64,7 +64,4 @@ public class MainActivity extends Activity {
         intent.putExtra("Contact", person);
         startActivity(intent);
     }
-
-
-
 }
